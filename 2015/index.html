@@ -24,7 +24,26 @@
 
   <!-- STYLES -->
   <link rel="stylesheet" type="text/css" href="themes/yellow-swan/css/main.css">
+  <!-- AddThisEvent theme css -->
+  <link rel="stylesheet" href="themes/yellow-swan/css/addthisevent.theme1.css" type="text/css"/>
   <!-- / STYLES -->
+    
+    
+    <!-- AddThisEvent Settings -->
+    <script src="themes/yellow-swan/js/ate.min.js"></script>
+    <script type="text/javascript">
+    addthisevent.settings({
+        license    : "replace-with-your-licensekey",
+        css        : false,
+        outlook    : {show:true, text:"Outlook Calendar"},
+        google     : {show:true, text:"Google Calendar"},
+        yahoo      : {show:true, text:"Yahoo Calendar"},
+        outlookcom : {show:true, text:"Outlook.com"},
+        appleical  : {show:true, text:"Apple iCalendar"},
+        dropdown   : {order:"appleical,google,outlook,outlookcom,yahoo"}
+    });
+    </script>
+    
 
 </head>
 <body>
@@ -38,28 +57,22 @@
             <a href="#about" title="About" class="nav-link">About ReCert</a>
           </li>
           <li class="nav-item">
-            <a href="#topics" title="Topics" class="nav-link">Topics</a>
-          </li>
-          <li class="nav-item">
             <a href="#cfp" title="Call for papers" class="nav-link">Call for papers</a>
           </li>
+          <li class="nav-item">
+            <a href="#dates" title="Important Dates" class="nav-link">Important Dates</a>
+          </li>
+          <li class="nav-item">
+            <a href="#orgcom" title="Organizing Committee" class="nav-link">Organizing Committee</a>
+          </li>
+          <li class="nav-item">
+            <a href="#prgcom" title="Organizing Committee" class="nav-link">Program Committee</a>
+          </li> 
           <li class="nav-item">
             <a href="#location" title="Location" class="nav-link">Location</a>
           </li>
           <li class="nav-item">
-            <a href="#speakers" title="Speakers" class="nav-link">Speakers</a>
-          </li>
-          <li class="nav-item">
-            <a href="#schedule" title="Schedule" class="nav-link">Schedule</a>
-          </li>
-          <li class="nav-item">
             <a href="#sponsors" title="Sponsors" class="nav-link">Sponsors</a>
-          </li>
-          <li class="nav-item">
-            <a href="#partners" title="Partners" class="nav-link">Partners</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" title="Contact" class="nav-link">Contact</a>
           </li>
       </ul>
     </nav>
@@ -72,6 +85,7 @@
         <h6 class="logo-name"> 
           <a class="logo-link" href="#" title="Conference name" itemprop="name">1st International Workshop on Linked Data Repair and Certification</a>
         </h6>
+        <h4 class="logo-sub-name"><a class="logo-link" href="http://www.k-cap2015.org/">Half-day Workshop at the 8th International Conference on Knowledge Capture (K-CAP 2015)</a></h4>  
         <h2 class="tagline">October 7, 2015 - Palisades, NY, USA</h2>
     
         <div class="call-action-area">
@@ -90,17 +104,23 @@
 <!-- ABOUT -->
 <section class="about" id="about">
   <h2 class="section-title">About ReCert</h2>
+  <p style="font-weight: bold;">1st International Workshop on Linked Data Repair and Certification (ReCert 2015) is a half-day workshop at the Half-day Workshop at <a href="http://www.k-cap2015.org">the 8th International Conference on Knowledge Capture (K-CAP 2015)</a>.</p>
+       
   <p itemprop="description">In recent years, we have witnessed a big growth of the Web of Data due to the enthusiasm shown by research scholars, public sector institutions and some private companies. Nevertheless, no rigorous processes for creating or mapping data have been systematically followed in most cases, leading to uneven quality among the different datasets available. Though low quality datasets might be adequate in some cases, these gaps in quality in different datasets sometimes hinder the effective exploitation, especially in industrial and production settings.</p>
 
   <p>In this context, there are ongoing efforts in the Linked Data community to define the different quality dimensions and metrics to develop quality assessment frameworks. These initiatives have mostly focused on spotting errors as part of independent research efforts, sometimes lacking a global vision. Further, up to date, no significant attention has been paid to the automatic or semi-automatic repair of Linked Data, i.e., the use of unattended algorithms or supervised procedures for the correction of errors in linked data. Repaired data is susceptible of receiving a certification stamp, which together with reputation metrics of the sources can lead to having trusted linked data sources.</p>
+    
+ <p>The goal of the Workshop on Linked Data Repair and Certification is to raise the awareness of dataset repair and certification techniques for Linked Data and to promote approaches to assess, monitor, maintain, improve, and certify Linked Data quality.</p>    
 
-  <p> more ...</p>
 </section>
 <!-- / ABOUT -->
-          
-<!-- TOPICS -->
-<section class="location" id="topics">
-  <h2 class="section-title">Topics</h2>
+                  
+<!-- CFP -->
+<section class="location" id="cfp">
+  <h2 class="section-title">Call for papers</h2>
+  <p itemprop="description"></p>
+    
+  <h4 class="section-title">Topics of Interest</h4>
   <p itemprop="description">This workshop aims at providing an insight on the whole process of linked data quality assessment, linked data repair and linked data certification. The workshop topics include, but are not limited to:</p>
     <ul style="font-size: 1.6em; line-height: 1.6em; margin-bottom: 1.4em;">
         <li>» Quality models for Linked Data</li>
@@ -115,27 +135,189 @@
         <li>» Representation of quality reports and certification information</li>
         <li>» Linked Data quality in service level agreements</li>
         <li>» Trust and reputation management of Linked Data publishers</li>
-    </ul>
+    </ul>    
+
+  <h4 class="section-title">Submissions</h4>
+  <p>Manuscripts are expected to follow the LNCS format as described here. The limit for short papers is 4 pages, and the limit for long papers is 10 pages. Submissions shall be made through the Easychair system, and </p>
+    
+    <p>Submission criteria are as follows:</p>
+    
+    <ul style="font-size: 1.6em; line-height: 1.6em; margin-bottom: 1.4em;">
+        <li>» Papers must adhere to the <a href="https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0">LNCS format guidelines.</a></li>
+        <li>» Papers are limited to 10 pages (including figures, tables and appendices) for long papers and 4 pages for short papers.</li>
+        <li>» Papers are submitted in PDF format via the workshop’s EasyChair submission pages.</li>
+    </ul> 
+    
+  <p>The accepted papers will be published as CEUR proceedings after the workshop.</p>    
+
+  <p>The authors of the accepted papers are given a presentation time slot of 25 minutes, with 5 minutes Q&amp;A.</p>
 </section>
-<!-- / TOPICS --> 
+<!-- / CFP --> 
+          
+<!-- TOPICS -->
+<section class="about" id="dates">
+  <h2 class="section-title">Important dates</h2>
+    <table class="schedule-tbl" width="50%">
+    <tr>
+        <td>Paper Submission</td>
+        <td>Monday July 20, 2015</td>
+        <td>
+            <div title="Add to Calendar" class="addthisevent">
+                Add to Calendar
+                <span class="start">07/20/2015 11:59 PM</span>
+                <span class="end">07/20/2015 11:59 PM</span>
+                <span class="timezone">Europe/Paris</span>
+                <span class="title">Recert 2105 - Paper Submission Deadline</span>
+                <span class="description">Description of the event</span>
+                <span class="location">Palisades, NY, USA</span>
+                <span class="organizer">Organizer</span>
+                <span class="organizer_email">nmihindu@fi.upm.es</span>
+                <span class="all_day_event">false</span>
+                <span class="date_format">MM/DD/YYYY</span>
+	       </div>
+        </td>
+    </tr>
+    <tr class="schedule-other">
+        <td>Acceptance Notification</td>
+        <td>Monday August 3, 2015</td>
+        <td>
+            <div title="Add to Calendar" class="addthisevent">
+                Add to Calendar
+                <span class="start">06/18/2015 09:00 AM</span>
+                <span class="end">06/18/2015 11:00 AM</span>
+                <span class="timezone">Europe/Paris</span>
+                <span class="title">Recert 2105 - Acceptance Notification</span>
+                <span class="description">Description of the event</span>
+                <span class="location">Palisades, NY, USA</span>
+                <span class="organizer">ReCert 2015 Organizing Committee</span>
+                <span class="organizer_email">nmihindu@fi.upm.es</span>
+                <span class="all_day_event">false</span>
+                <span class="date_format">MM/DD/YYYY</span>
+	       </div>
+        </td>        
+    </tr>
+    <tr>
+        <td>Camera-ready version</td>
+        <td>Monday August 10, 2015</td>
+        <td>
+            <div title="Add to Calendar" class="addthisevent">
+                Add to Calendar
+                <span class="start">06/18/2015 09:00 AM</span>
+                <span class="end">06/18/2015 11:00 AM</span>
+                <span class="timezone">Europe/Paris</span>
+                <span class="title">Recert 2105 - Camera-ready Submission</span>
+                <span class="description">Description of the event</span>
+                <span class="location">Palisades, NY, USA</span>
+                <span class="organizer">ReCert 2015 Organizing Committee</span>
+                <span class="organizer_email">nmihindu@fi.upm.es</span>
+                <span class="all_day_event">false</span>
+                <span class="date_format">MM/DD/YYYY</span>
+	       </div>
+        </td>        
+    </tr>
+    <tr class="schedule-other">
+        <td>Workshop</td>
+        <td>Monday June 8, 2015</td>
+        <td>
+            <div title="Add to Calendar" class="addthisevent">
+                Add to Calendar
+                <span class="start">06/18/2015 09:00 AM</span>
+                <span class="end">06/18/2015 11:00 AM</span>
+                <span class="timezone">Europe/Paris</span>
+                <span class="title">Recert 2105 Workshop</span>
+                <span class="description">Description of the event</span>
+                <span class="location">Palisades, NY, USA</span>
+                <span class="organizer">ReCert 2015 Organizing Committee</span>
+                <span class="organizer_email">nmihindu@fi.upm.es</span>
+                <span class="all_day_event">false</span>
+                <span class="date_format">MM/DD/YYYY</span>
+	       </div>
+        </td>        
+    </tr>        
+    </table>
+</section>
+<!-- / TOPICS -->           
+          
+<!-- Organizing Committee -->
+<section class="speakers" id="speakers">
+  <h2 class="section-title">Organizing Committee</h2>
+
+  <ul class="speakers-list">
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+          <span class="speaker-photo">
+            <img class="photo" src="themes/yellow-swan/img/nandana.jpg" alt="Nandana Mihindukulasooriya" itemprop="image">
+          </span>
+
+        <h3 class="speech-title">
+            <span>Nandana Mihindukulasooriya</span> <br/>
+            Email:  nmihindu AT fi.upm.es
+            <br/>
+            <a href="http://twitter.com/nandanamihindu" title="@nandanamihindu">
+              @nandanamihindu
+            </a>
+
+        </h3>
+
+        <h3 class="speakers-name">
+            <a href="http://www.oeg-upm.net/">Ontology Engineering Group</a>, <a href="http://www.upm.es/internacional">Universidad Politécnica de Madrid</a>
+        </h3>
+        <!-- p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p -->
+      </li>
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+          <span class="speaker-photo">
+            <img class="photo" src="themes/yellow-swan/img/victor.jpg" alt="Víctor Rodríguez Doncel" itemprop="image">
+          </span>
+
+        <h3 class="speech-title">
+            <span>Dr. Víctor Rodríguez Doncel</span><br/>
+            Email:  vroddon AT fi.upm.es
+            <br/>
+            <a href="http://twitter.com/vroddon" title="@vroddon">
+              @vroddon
+            </a>
+        </h3>
+
+        <h3 class="speakers-name">
+            <a href="http://www.oeg-upm.net/">Ontology Engineering Group</a>, <a href="http://www.upm.es/internacional">Universidad Politécnica de Madrid</a>
+        </h3>
+        <!-- p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p -->
+      </li>
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+          <span class="speaker-photo">
+            <img class="photo" src="themes/yellow-swan/img/raul.jpg" alt="Raúl García Castro" itemprop="image">
+          </span>
+
+        <h3 class="speech-title">
+            <span>Dr. Raúl García Castro (Contact)</span><br/>
+            Email:  rgarcia AT fi.upm.es
+            <br/>
+            <a href="http://twitter.com/rgcmme" title="@rgcmme">
+              @rgcmme
+            </a>
+        </h3>
+
+        <h3 class="speakers-name">
+            <a href="http://www.oeg-upm.net/">Ontology Engineering Group</a>, <a href="http://www.upm.es/internacional">Universidad Politécnica de Madrid</a>
+        </h3>
+        <!-- p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p -->
+      </li>      
+  </ul>
+</section>
+<!-- / Organizing Committee -->
           
           
-<!-- CFP -->
-<section class="about" id="cfp">
-  <h2 class="section-title">Call for papers</h2>
-  <p itemprop="description"></p>
-
-  <p>Manuscripts are expected to follow the LNCS format as described <a href="https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0">here</a>. The limit for short papers is 4 pages, and the limit for long papers is 10 pages. Submissions shall be made through the Easychair system, and papers will be available after the workshop as CEUR proceedings</p>
-
-  <p> more ...</p>
-</section>
-<!-- / CFP -->          
-                  
+    <!-- Programme Committee -->
+    <section class="about" id="prgcom">
+        <h2 class="section-title">Programme Committee</h2>
+        <p>TDB</p>
+    </section>  
+    <!-- / Programme Committee -->      
+          
 <!-- LOCATION -->
 <section class="location" id="location">
   <h2 class="section-title">Location</h2>
     
-  <p> ReCert 2015 will be held as part of K-CAP 2015 at the Dolce Palisades Hotel and Conference Center, just outside New York City. The Dolce Palisades is within 30 miles of the NYC airports: John F. Kennedy (JFK), LaGuardia (LGA), Newark (EWR) and Westchester (HPN). The venue is minutes by car to Tarrytown Station, with service to Grand Central Terminal in Manhattan.</p>    
+  <p>ReCert 2015 will be held as part of K-CAP 2015 at the Dolce Palisades Hotel and Conference Center, just outside New York City. The Dolce Palisades is within 30 miles of the NYC airports: John F. Kennedy (JFK), LaGuardia (LGA), Newark (EWR) and Westchester (HPN). The venue is minutes by car to Tarrytown Station, with service to Grand Central Terminal in Manhattan.</p>    
 
   <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
     Address:  
@@ -146,125 +328,11 @@
 
   <div id="map-canvas" class="location-area" data-address="334 Rte 9w, Palisades, NY 10964, United States"></div>
 </section>
-<!-- / LOCATION -->
-<!-- SPEAKERS -->
-<section class="speakers" id="speakers">
-  <h2 class="section-title">Speakers</h2>
-
-  <ul class="speakers-list">
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-          <span class="speaker-photo">
-            <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Linus Torvalds" itemprop="image">
-          </span>
-
-        <h3 class="speech-title">
-            <span class="speech-time">10h00</span>
-            <span> Digging into a Linux Kernel</span>
-        </h3>
-
-        <h3 class="speakers-name">
-          Linus Torvalds
-            <a href="http://twitter.com/linus" title="@linus">
-              @linus
-            </a>
-        </h3>
-        <p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-      </li>
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-          <span class="speaker-photo">
-            <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Bill Gates" itemprop="image">
-          </span>
-
-        <h3 class="speech-title">
-            <span class="speech-time">11h00</span>
-            <span> Introducing Windows 12</span>
-        </h3>
-
-        <h3 class="speakers-name">
-          Bill Gates
-            <a href="http://github.com/billy95" title="@billy95">
-              @billy95
-            </a>
-        </h3>
-        <p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-      </li>
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-          <span class="speaker-photo">
-            <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Chuck Norris" itemprop="image">
-          </span>
-
-        <h3 class="speech-title">
-            <span class="speech-time">13h00</span>
-            <span> How to kill a elephant with one finger</span>
-        </h3>
-
-        <h3 class="speakers-name">
-          Chuck Norris
-            <a href="http://twitter.com/littlechuck" title="@littlechuck">
-              @littlechuck
-            </a>
-        </h3>
-        <p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-      </li>
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-          <span class="speaker-photo">
-            <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Steve Jobs" itemprop="image">
-          </span>
-
-        <h3 class="speech-title">
-            <span class="speech-time">14h00</span>
-            <span> Presenting iPad</span>
-        </h3>
-
-        <h3 class="speakers-name">
-          Steve Jobs
-            <a href="http://github.com/stevie" title="@stevie">
-              @stevie
-            </a>
-        </h3>
-        <p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-      </li>
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-          <span class="speaker-photo">
-            <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Mark Zuckerberg" itemprop="image">
-          </span>
-
-        <h3 class="speech-title">
-            <span class="speech-time">16h00</span>
-            <span> Revealing Facebook Secrets</span>
-        </h3>
-
-        <h3 class="speakers-name">
-          Mark Zuckerberg
-            <a href="http://twitter.com/zuck" title="@zuck">
-              @zuck
-            </a>
-        </h3>
-        <p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-      </li>
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-          <span class="speaker-photo">
-            <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Steve Wozniak" itemprop="image">
-          </span>
-
-        <h3 class="speech-title">
-            <span class="speech-time">17h00</span>
-            <span> Why do I prefer Android over iPhone</span>
-        </h3>
-
-        <h3 class="speakers-name">
-          Steve Wozniak
-            <a href="http://twitter.com/woz" title="@woz">
-              @woz
-            </a>
-        </h3>
-        <p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-      </li>
-  </ul>
-</section>
-<!-- / SPEAKERS -->
+<!-- / LOCATION -->          
+          
+          
 <!-- SCHEDULE -->
-<section class="schedule" id="schedule">
+<!-- section class="schedule" id="schedule">
   <h2 class="section-title">Schedule</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -364,18 +432,12 @@
       </tbody>
     </table>
   </div>
-</section>
+</section -->
 <!-- / SCHEDULE -->
 <!-- SPONSORS -->
 <section class="sponsors" id="sponsors">
   <h2 class="section-title">Sponsors</h2>
   <ul class="sponsors-list">
-
-    <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
-      <a href="http://eventick.com.br" class="sponsor-logo sponsor--link" itemprop="url">
-        <img src="themes/yellow-swan/img/sponsor.png" alt="Eventick" class="photo" itemprop="image">
-      </a>
-    </li>
     <li class="sponsor-item">
       <a class="sponsor-logo sponsor--link sponsor-call" href="#">
       	<img src="themes/yellow-swan/img/your-logo.jpg" alt="your logo" class="photo">
@@ -384,49 +446,10 @@
   </ul>
 </section>
 <!-- / SPONSORS -->
-<!-- PARTNERS -->
-<section class="partners" id="partners">
-  <h2 class="section-title">Partners</h2>
-  <ul class="partners-list">
-
-    <li class="partner-item" itemscope itemtype="http://schema.org/Organization">
-      <a href="http://braziljs.org" class="partner-logo partner-link" itemprop="url">
-        <img src="themes/yellow-swan/img/partner.png" alt="BrazilJS" class="photo" itemprop="image">
-      </a>
-    </li>
-    <li class="partner-item">
-      <a class="partner-logo partner-link partner-call" href="#">
-      	<img src="themes/yellow-swan/img/your-logo.jpg" alt="your logo" class="photo">
-      </a>
-    </li>
-  </ul>
-</section>
-<!-- / PARTNERS -->
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <h2 class="section-title">Contact</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ducimus neque amet corrupti ex temporibus similique.</p>
-  <form method="post" action="contact.php" id="form" class="form">
-    <div class="control-group control-group-name">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" placeholder="Your name">
-    </div>
-    <div class="control-group control-group-email">
-      <label for="email">E-mail</label>
-    <input type="email" name="email" id="email" placeholder="Your e-mail">
-    </div>
-    <div class="control-group">
-      <label for="message">Message</label>
-    <textarea name="" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
-    </div>
-    <input class="btn btn-send" type="submit" value="Send">
-  </form>
-</section>
-<!-- / CONTACT -->
-
+          
         <!-- FOOTER -->
         <footer class="footer">
-          <p>Made with ♥ by <a href="https://github.com/braziljs/conf-boilerplate">Conf Boilerplate</a> :)</p>
+          <p>&copy; ReCert 2015 Organization Committee (Template based on <a href="https://github.com/braziljs/conf-boilerplate">Conf Boilerplate</a> :)</p>
         </footer>
         <!-- / FOOTER -->
       </div>
@@ -440,7 +463,7 @@
 
   <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
   <script src="themes/yellow-swan/js/main.js"></script>
-
+  
   <!-- GOOGLE ANALYTICS -->
   <script type="text/javascript">
   var _gaq = _gaq || [];

@@ -341,6 +341,11 @@ nav {
   font-size: 5em;
   letter-spacing: -0.04em;
 }
+.logo-sub-name {
+  margin-bottom: 0;
+  font-size: 3em;
+  letter-spacing: -0.04em;
+}
 .tagline {
   margin-bottom: 50px;
   font-size: 2em;
@@ -599,6 +604,9 @@ nav {
   .logo-name {
     font-size: 2em;
   }
+  .logo-sub-name {
+    font-size: 1em;
+  }    
   .tagline {
     margin-bottom: 15px;
     font-size: 1.4em;
@@ -659,6 +667,10 @@ nav {
   .logo-name {
     font-size: 2em;
     margin-bottom: .4em;
+  }
+  .logo-sub-name {
+    font-size: 1em;
+    margin-bottom: .2em;
   }
   .schedule-tbl .schedule-description {
     display: none;
@@ -725,7 +737,8 @@ nav {
 .logo-link,
 .tagline,
 .call-action-area .price {
-  color: #fff;
+  color: whitesmoke;
+  font-weight: bold;
   text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 .tagline {
